@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <!-- Regular CSS -->
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Avenger Experience Survey Form</title>
+  </head>
+  <body
+    class="bg-primary d-flex min-vh-100 flex-column min-vw-100 align-items-center"
+  >
+    <style>
+      @media only screen and (max-width: 576px) {
+        #survey-form {
+          width: 100vw;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        #survey-form {
+          width: 75vw;
+        }
+      }
+
+      @media only screen and (min-width: 1440px) {
+        #survey-form {
+          width: 50vw;
+        }
+      }
+    </style>
+    <header class="text-center">
+      <h1 id="title" class="text-white">Avenger Experience Survey Form</h1>
+      <p id="description" class="text-white">
+        Please fill out the survey below.
+      </p>
+    </header>
+
+    <!-- FORM -->
+    <form id="survey-form" class="form-control bg-white">
+      <!-- NAME INPUT -->
+      <div>
+        <label for="name" id="name-label" class="form-label"
+          >Please enter your full name</label
+        >
+        <input
+          type="text"
+          id="name"
+          required
+          placeholder="Stan Lee"
+          class="form-control mb-4"
+        />
+        <div class="invalid-feedback">Valid name entry is required</div>
+      </div>
+
+      <!-- EMAIL INPUT -->
+      <div>
+        <label for="email" id="email-label" class="form-label"
+          >Please enter a valid email</label
+        >
+        <input
+          type="email"
+          id="email"
+          pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+          required
+          placeholder="stan.lee@excelsior.com"
+          class="form-control mb-4"
+        />
+        <div class="invalid-feedback">
+          Valid email entry is required - be sure to add "@" and ".com" to the
+          entry. (i.e.: stan.lee@excelsior.com)
+        </div>
+      </div>
+
+      <!-- NUMBER INPUT -->
+      <div class="col-sm-7">
+        <label for="number" id="number-label" class="form-label"
+          >Please enter you age
+          <span class="text-muted">(Optional)</span></label
+        >
+        <input
+          type="number"
+          id="number"
+          placeholder="Enter your age"
+          min="1"
+          max="199"
+          class="form-control mb-4"
+        />
+      </div>
+
+      <!-- DATE INPUT -->
+      <div class="mb-4 col-sm-7">
+        <label for="service-date" class="form-label"
+          >Please tell us when you used our services</label
+        >
+        <input
+          type="date"
+          name="service-date"
+          id="service-date"
+          class="form-control"
+          required
+          min="1963-09-01"
+        />
+      </div>
+
+      <!-- DROPDOWN INPUT -->
+      <label for="dropdown" class="form-label"
+        >Please tell us who assisted you</label
+      >
+      <select name="heroes" id="dropdown" class="form-control mb-4" required>
+        <option value="">Choose one...</option>
+        <option value="ironman">Anthony Stark</option>
+        <option value="capt-america">Steve Rogers</option>
+        <option value="hulk">Bruce Banner</option>
+        <option value="thor">Thor Odinson</option>
+        <option value="balck-widow">Natasha Romanoff</option>
+        <option value="kawkeye">Clint Burton</option>
+        <option value="nick-fury">Col. Nicholas J. Fury</option>
+      </select>
+
+      <!-- CHECKBOX INPUT -->
+      <div class="mb-4">
+        <label class="form-label"
+          >Please tell the type of service you received
+          <span class="text-muted">(Check all that apply)</span></label
+        >
+        <br />
+        <div class="form-control">
+          <input
+            type="checkbox"
+            id="help-crossing-street"
+            name="service-type"
+            value="help-crossing-street"
+          />
+          <label for="help-crossing-street">Help crossing the street</label>
+          <br />
+          <input
+            type="checkbox"
+            id="cat-stuck-tree"
+            name="service-type"
+            value="cat-stuck-tree"
+          />
+          <label for="cat-stuck-tree">Retrieve cat stuck on a tree</label>
+          <br />
+          <input
+            type="checkbox"
+            id="bike-stolen"
+            name="service-type"
+            value="bike-stolen"
+          />
+          <label for="bike-stolen">Recovering stolen bike</label> <br />
+          <input
+            type="checkbox"
+            id="burning-building"
+            name="service-type"
+            value="burning-building"
+          />
+          <label for="burning-building">Saved from burning building</label>
+          <br />
+          <input
+            type="checkbox"
+            id="alien-invasion"
+            name="service-type"
+            value="alien-invasion"
+          />
+          <label for="alien-invasion">Alien invasion</label> <br />
+          <input type="checkbox" id="other" name="service-type" value="other" />
+          <label for="other">Other</label>
+        </div>
+      </div>
+
+      <!-- RADIO INPUT -->
+      <label class="form-label"
+        >On a scale of 1 to <em>"Excelsior!"</em>, how would you rate your
+        experience with our services?</label
+      >
+      <div class="form-control mb-4">
+        <input type="radio" id="terrible" name="rating" value="terrible" />
+        <label for="terrible"> 1 - Terrible</label><br />
+        <input
+          type="radio"
+          id="sw-terrible"
+          name="rating"
+          value="sw-terrible"
+        />
+        <label for="sw-terrible"> 2 - Somewhat terrible</label><br />
+        <input
+          type="radio"
+          id="indifferent"
+          name="rating"
+          value="indifferent"
+        />
+        <label for="indifferent"> 3 - Indifferent</label><br />
+        <input
+          type="radio"
+          id="sw-excellent"
+          name="rating"
+          value="sw-excellent"
+        />
+        <label for="sw-excellent"> 4 - Somewhat excellent</label><br />
+        <input type="radio" id="excellent" name="rating" value="excellent" />
+        <label for="excellent"> 5 - Excellent</label><br />
+        <input type="radio" id="excelsior" name="rating" value="excelsior" />
+        <label for="excelsior"> Excelsior!</label><br />
+      </div>
+
+      <!-- TEXTAREA INPUT -->
+      <div class="mb-4">
+        <label for="additional-comments" class="form-label"
+          >Please provide any additional comments you may have about your
+          experience. Criticism is always welcome!</label
+        >
+        <textarea
+          name="additional-comments"
+          id="additional-comments"
+          class="mw-100 form-control"
+          cols="500"
+          rows="5"
+          style="resize: none"
+        ></textarea>
+      </div>
+
+      <input type="submit" name="" id="" class="btn btn-primary w-100" />
+    </form>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
+      integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js"
+      integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

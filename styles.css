@@ -1,0 +1,17 @@
+@media only screen and (max-width: 576px) {
+  #survey-form {
+    width: 100vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  #survey-form {
+    width: 75vw;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  #survey-form {
+    width: 50vw;
+  }
+}
