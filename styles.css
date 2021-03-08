@@ -1,6 +1,11 @@
+#survey-form {
+  padding: 5rem;
+}
+
 @media only screen and (max-width: 576px) {
   #survey-form {
     width: 100vw;
+    padding: 2rem;
   }
 }
 
