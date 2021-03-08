@@ -1,6 +1,6 @@
 # Avenger Experience Survey Form
 
-Checkout the project here: https://filipeqm94.github.io/avernger-experience-form/
+Checkout the project here: https://filipeqm94.github.io/avenger-experience-form/
 
 Responsive, mobile-first form (HTML, CSS + Bootstrap)
 
