@@ -12,6 +12,11 @@ The purpose of this project is to apply what I've learn about Reponsive Web Desi
 
 [Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
 
+### Technologies used
+
+- HTML
+- CSS
+
 ### Additional notes
 
 [x] Have an alert show when the form has been submitted.
