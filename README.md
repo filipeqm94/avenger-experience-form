@@ -1,11 +1,17 @@
-# Avenger Experience Survey Form
+# Survey Form
 
-Checkout the project here: https://filipeqm94.github.io/avenger-experience-form/
+## Introduction
 
-Responsive, mobile-first form (HTML, CSS + Bootstrap)
+This is a project on **Responsive Web Design** from [freeCodeCamp](https://www.freecodecamp.org/).
 
-The project was built with the following `user stories` by freeCodeCamp: [Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+## Purpose
 
-## Motivation
+The purpose of this project is to apply what I've learn about Reponsive Web Design with the [freeCodeCamp tutorials](https://www.freecodecamp.org/learn/responsive-web-design/).
 
-I built the project for learning purposes, my main goal was to practice creating responsive layouts.
+### Link to challenge
+
+[Build a Survey Form](https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form)
+
+### Additional notes
+
+[x] Have an alert show when the form has been submitted.

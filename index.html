@@ -28,7 +28,12 @@
     </header>
 
     <!-- FORM -->
-    <form id="survey-form" class="form-control bg-white">
+    <form
+      id="survey-form"
+      class="form-control bg-white"
+      action="/"
+      onsubmit="submitAlert()"
+    >
       <!-- NAME INPUT -->
       <div>
         <label for="name" id="name-label" class="form-label"
@@ -211,7 +216,14 @@
         ></textarea>
       </div>
 
-      <input type="submit" name="" id="submit" class="btn btn-primary w-100" />
+      <div class="text-center">
+        <input
+          type="submit"
+          id="submit"
+          value="Submit"
+          class="btn btn-primary w-25"
+        />
+      </div>
     </form>
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"
@@ -223,5 +235,11 @@
       integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      function submitAlert() {
+        alert("Thank you for taking our survey!");
+      }
+    </script>
   </body>
 </html>
