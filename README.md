@@ -16,6 +16,7 @@ The purpose of this project is to apply what I've learn about Reponsive Web Desi
 
 - HTML
 - CSS
+  - Bootstrap
 
 ### Additional notes
 
